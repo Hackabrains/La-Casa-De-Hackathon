@@ -1,0 +1,60 @@
+.main {
+    text-transform: uppercase;
+    margin: 0 4%;
+    height: calc(100vh - 100px);
+    display: flex;
+    margin-top: -40px;
+    flex-flow: column wrap;
+    justify-content: center;
+    background-image: url('../imgs/dali-face.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 90% 0%;
+    &__title {
+        font-size: 3em;
+        margin: 0;
+        &--glitch1 {
+            @include textGlitch("glitch",
+            10,
+            white,
+            black,
+            red,
+            blue,
+            220,
+            115);
+        }
+        &--bgRed {
+            @include textGlitch("glitch1",
+            10,
+            white,
+            $secondaryColor,
+            red,
+            black,
+            100,
+            115);
+            padding: 4px 3px 1px 2px;
+            display: inline-block;
+            position: relative;
+            top: -7px;
+            font-size: .8em;
+            border-radius: 2px;
+            background: $secondaryColor;
+        }
+        &--glitch3 {
+            @include textGlitch("glitch",
+            10,
+            white,
+            black,
+            red,
+            blue,
+            340,
+            115);
+        }
+    }
+    &__description {
+        margin: 0;
+        opacity: .4;
+        letter-spacing: .5px;
+        font-size: 1.2em;
+    }
+}

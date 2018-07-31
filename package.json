@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "parcel ./index.html --port 8080"
+    "start": "parcel ./index.html --port 8080",
+    "build": "parcel build --out-dir docs/ index.html"
   },
   "keywords": [],
   "author": "",

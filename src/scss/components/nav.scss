@@ -9,9 +9,9 @@
         &__item {
             // padding: 15px;
             text-transform: uppercase;
-            &:first-child:after {
-                content: '|';
-                padding: 0 15px;
+            a {
+                color: $primaryColor;
+                text-decoration: none;
             }
         }
     }

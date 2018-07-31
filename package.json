@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "parcel ./index.html --port 8080",
-    "build": "parcel build --out-dir docs/ index.html"
+    "build": "parcel build --out-dir docs/ --public-url ./  index.html"
   },
   "keywords": [],
   "author": "",

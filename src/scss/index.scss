@@ -1,19 +1,33 @@
-$primaryColor: white;
-$secondaryColor: #B40505;
-@import './components/mixins.scss';
-@import './components/nav.scss';
-@import './components/main.scss';
-@import './components/btn.scss';
-@import './components/modal.scss';
+// utilitys
+@import './utils/variables.scss';
+@import './utils/placeholders.scss';
+@import './utils/mixins.scss';
 
-body {
-    margin: 0;
-    padding: 0;
-    background: url('../imgs/bg.png');
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    color: $primaryColor;
+//components
+@import './components/header.scss';
+@import './components/main.scss';
+
+//pages
+@import './pages/pages.scss';
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html, body
+{
+    @extend %page;
     font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }

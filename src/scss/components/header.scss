@@ -1,0 +1,48 @@
+.head
+{
+  @extend %fully-centralized-row;
+  position: relative;
+  padding: 1.6em 0;
+  top: 0px;
+
+  .header-logo
+  {
+    position: absolute;
+    left: 3%;
+    top: 15%;
+    width: 8.5em;
+  }
+
+  .nav-container
+  {
+    margin: auto;
+    @extend %row;
+
+    .nav__item
+    {
+      &:nth-child(1){ margin-left: 0; }
+      text-transform: uppercase;
+      margin-left: 2.3em;
+      color: #ddd;
+      font-size: .9em;
+      font-weight: 600;
+
+      &:after
+      {
+        background: linear-gradient(to right, #264494 0%, #495aff 100%);
+        content: '';
+        display: block;
+        height: 2px;
+        margin: 3px auto;
+        transition: width .3s ease, background-color .3s ease;
+        width: 0px;
+      }
+
+      &:hover:after
+      {
+        background: linear-gradient(to right, #264494 0%, #495aff 100%);
+        width: $full-size;
+      }
+    }
+  }
+}

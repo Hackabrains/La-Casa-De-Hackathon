@@ -15,31 +15,44 @@
 </head>
 
 <body>
-	<nav class="nav">
-		<div></div>
 
-		<ul class="nav__list">
-			<!--<li class="nav__list__item"><a href="#" title="Em breve"><s>Regulamento</s></a></li>-->
-		</ul>
-	</nav>
-	<section class="main">
-		<main class="main__content">
-			<h1 class="main__title">
+		<section id="home">
 
-				<img src="./imgs/hackathon.png" />
-			</h1>
-			<p class="main__description">
-			</p>
-		</main>
-		<a href="https://www.sympla.com.br/hackabrains-2018__330947" target="_blank" class="btn btn--red" data-text="QUERO PARTICIPAR">QUERO PARTICIPAR</a>
+			<div id="particles-js"></div>
+
+			<header class="head">
+
+				<img src="./imgs/hackabrainslogo.png" class="header-logo">
+
+				<nav class="nav-container">
+					<a href="#home" class="nav__item"> Inicio </a>
+					<a href="#contato" class="nav__item"> Contato </a>
+					<a href="#patrocinio" class="nav__item"> Patrocínio </a>
+					<a href="#" target="_blank" class="nav__item"> Regulamento </a>
+				</nav>
+			</header>
+
+			<main class="main-home">
+
+				<h1>
+					<img src="./imgs/hackathon.png" class="hackathon-logo">
+				</h1>
+
+				<a class="btn-subscribe" href="https://www.sympla.com.br/hackabrains-2018__330947" target="_blank" data-text="QUERO PARTICIPAR">
+					Inscreva-se
+				</a>
+
+			</main>
+		</section>
+
+		<!--
+		<section id="contato">
 	</section>
 
+	<section id="patrocinio">
+</section> -->
 
-	<!--<div class="modal">-->
-	<!--	<div class="modal__content">-->
 
-	<!--	</div>-->
-	<!--</div>-->
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123143386-1"></script>
 	<script>
@@ -51,6 +64,8 @@
 		gtag('config', 'UA-123143386-1');
 	</script>
 
+	<script src="./js/particles.min.js"></script>
+	<script src="./js/particlesjs-config.js"></script>
 	<script src="./js/index.js"></script>
 
 </body>

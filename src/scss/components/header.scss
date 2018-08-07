@@ -23,13 +23,13 @@
       &:nth-child(1){ margin-left: 0; }
       text-transform: uppercase;
       margin-left: 2.3em;
-      color: #ddd;
+      color: $light-grey;
       font-size: .9em;
       font-weight: 600;
 
       &:after
       {
-        background: linear-gradient(to right, #264494 0%, #495aff 100%);
+        background: $light-grey;
         content: '';
         display: block;
         height: 2px;
@@ -40,7 +40,7 @@
 
       &:hover:after
       {
-        background: linear-gradient(to right, #264494 0%, #495aff 100%);
+        background: $light-grey;
         width: $full-size;
       }
     }

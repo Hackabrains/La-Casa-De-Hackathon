@@ -6,22 +6,29 @@
 //components
 @import './components/header.scss';
 @import './components/main.scss';
-
-//pages
-@import './pages/pages.scss';
+@import './components/scroll.scss';
+@import './components/home.scss';
+@import './components/about.scss';
+@import './components/contact.scss';
+@import './components/sponsors.scss';
 
 *
 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
 }
 
 html, body
 {
     @extend %page;
     font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+a
+{
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .background {

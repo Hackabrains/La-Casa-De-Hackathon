@@ -2,18 +2,18 @@
 {
   @extend %fully-centralized-column;
   width: $full-size;
-  margin-top: 8%;
+  height: 95%;
 
   .hackathon-logo
   {
-    width: 20em;
+    width: 30em;
   }
 
   .btn-subscribe
   {
     margin-top: 3%;
     cursor: pointer;
-    padding: 1em 1.6em;
+    padding: 2em 2.6em;
     color: $light-grey;
     background: $dark-pink;
     border: solid 1px $dark-pink;

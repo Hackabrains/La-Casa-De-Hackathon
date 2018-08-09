@@ -1,0 +1,44 @@
+@media screen and (max-width: 1440px)
+{
+  .head
+  {
+    .nav-container
+    {
+      .nav__item { font-size: .9em; }
+    }
+  }
+
+  .main-home
+  {
+    .hackathon-logo {  width: 25em; }
+    .btn-subscribe { padding: 1.5em 2.1em; }
+  }
+
+
+}
+
+@media screen and (max-width: 1360px)
+{
+  .main-home
+  {
+    .hackathon-logo {  width: 20em; }
+    .btn-subscribe { padding: .6em 1.6em; }
+  }
+}
+
+@media screen and (max-width: 1240px)
+{
+  #sponsor
+  {
+    margin: 0 1%;
+    .sponsor-container { width: 100%; }
+  }
+}
+
+@media screen and (max-width: 720px)
+{
+  #about
+  {
+    height: 85%;
+  }
+}

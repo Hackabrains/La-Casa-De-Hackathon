@@ -4,7 +4,9 @@
   "description": "",
   "scripts": {
     "start": "parcel ./src/index.html --port 8080",
-    "build": "parcel build --out-dir ./docs --public-url ./docs ./src/index.html"
+    "build": "npm run clean && parcel build --out-dir ./docs --public-url ./docs ./src/index.html  && npm run copy",
+    "clean": "rm ./index.html",
+    "copy": "cp ./docs/index.html ./index.html"
   },
   "keywords": [],
   "author": "",

@@ -50,7 +50,7 @@
 		<div id="section10" class="div-scroll">
 			<a href="#about" class="scroll-link">
 				<span class="cylinder"></span>
-				<p>Scroll</p>
+				<p class="text-scroll">Scroll</p>
 			</a>
 		</div>
 	</section>
@@ -185,19 +185,19 @@
 
 
 
-<script>
-function myMap() {
-var mapProp= {
-    center:new google.maps.LatLng(-31.7701217,-52.3388587),
-    zoom:17,
-		icon: '#',
-};
-		let map = new google.maps.Map(document.querySelector('#googleMap'),mapProp);
-}
-</script>
+	<script>
+	function myMap() {
+	let mapProp= {
+		center:new google.maps.LatLng(-31.7701217,-52.3388587),
+		zoom:17,
+			icon: '#',
+	};
+			let map = new google.maps.Map(document.querySelector('#googleMap'),mapProp);
+	}
+	</script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8Cgnl7akhQo_bIL9fBByOcyHrGgA35uk&callback=myMap">
 
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8Cgnl7akhQo_bIL9fBByOcyHrGgA35uk&callback=myMap"></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123143386-1"></script>
 

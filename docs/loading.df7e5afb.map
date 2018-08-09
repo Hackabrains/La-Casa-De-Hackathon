@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/loading.js"],"names":["window","onload","querySelector","style","display"],"mappings":";AAAAA,OAAOC,OAAS,WACLC,SAAAA,cAAc,YAAYC,MAAMC,QAAQ","file":"loading.df7e5afb.map","sourceRoot":"../src","sourcesContent":["window.onload = () => {\n \tdocument.querySelector('#loading').style.display=\"none\";\n}"]}

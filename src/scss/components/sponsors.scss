@@ -12,12 +12,14 @@
     .sponsor__single-content
     {
       @extend %fully-centralized-column;
-      height: 50%;
+      height: 35%;
+      border-bottom: solid 1px #eee;
+      margin-top: 2%;
 
       .college-icon
       {
-        width: 14em;
-        height: 7em;
+        width: 18em;
+        //height: 7em;
         margin-top: 1%;
       }
     }
@@ -26,7 +28,7 @@
     {
       @extend %center-row;
       justify-content: space-between;
-      height: 50%;
+      height: 55%;
 
       .multiple-content-container
       {
@@ -35,13 +37,14 @@
         .sponsor-items
         {
           width: 30em;
+          height: 8em;
           .sponsor__icon
           {
             width: 9em;
-            height: 6em;
+            height: 3.6em;
             margin: .4em;
             &:hover{
-              opacity: .9;
+              opacity: .8;
               transition: .11s ease-in-out;
             }
           }

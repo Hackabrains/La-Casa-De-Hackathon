@@ -4,6 +4,7 @@
 @import './utils/mixins.scss';
 
 //components
+@import './components/loading.scss';
 @import './components/header.scss';
 @import './components/main.scss';
 @import './components/scroll.scss';
@@ -11,6 +12,8 @@
 @import './components/about.scss';
 @import './components/contact.scss';
 @import './components/sponsors.scss';
+@import './components/footer.scss';
+
 
 *
 {

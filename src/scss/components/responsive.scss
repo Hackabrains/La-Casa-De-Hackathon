@@ -1,5 +1,4 @@
-@media screen and (max-width: 1440px)
-{
+@media screen and (max-device-width: 1440px){
   .head
   {
     .nav-container
@@ -13,21 +12,26 @@
     .hackathon-logo {  width: 25em; }
     .btn-subscribe { padding: 1.5em 2.1em; }
   }
-
-
 }
 
-@media screen and (max-width: 1360px)
-{
+@media screen and (max-device-width: 1366px){
   .main-home
   {
     .hackathon-logo {  width: 20em; }
-    .btn-subscribe { padding: .6em 1.6em; }
+    .btn-subscribe { padding: 1em 1.6em; }
+  }
+
+  #sponsor
+  {
+    .sponsor-container
+    {
+      .sponsor__multiple-content
+      {  width: 95%; }
+    }
   }
 }
 
-@media screen and (max-width: 1240px)
-{
+@media screen and (max-device-width: 1280px){
   #sponsor
   {
     margin: 0 1%;
@@ -35,8 +39,21 @@
   }
 }
 
-@media screen and (max-width: 720px)
-{
+@media screen and(max-device-width: 1024px){
+  #sponsor
+  {
+    .sponsor-container
+    {
+      .sponsor__multiple-content
+      {
+        height: 75%;
+        width: 98%;
+      }
+    }
+  }
+}
+
+@media screen and (max-device-width: 720px){
   #about
   {
     height: 85%;
@@ -44,9 +61,7 @@
 }
 
 
-@media (device-width: 360px) 
-{
-
+@media screen and (max-device-width: 480px){
   .head
   {
     background: rgba(0, 0, 0, .3);
@@ -60,12 +75,12 @@
     {
       padding: 2em 0;
       margin: 0 1%;
-  
+
       .nav__item
       {
         font-size: 2em;
       }
-    
+
     }
   }
     .main-home
@@ -77,11 +92,11 @@
      width: $full-size;
 
     .hackathon-logo {  width: $full-size; }
-    .btn-subscribe 
-    { 
+    .btn-subscribe
+    {
       font-size: 2.8em;
       width: 70%;
-      padding: 1.2em 0; 
+      padding: 1.2em 0;
     }
   }
 
@@ -91,10 +106,10 @@
   position: absolute;
   bottom: 3%;
   left: 50%;
-  
+
   .scroll-link {
     font : normal 3em 20px/1 'Josefin Sans', sans-serif;
-    .cylinder 
+    .cylinder
     {
       top: 1%;
       left: 50%;
@@ -141,13 +156,13 @@
 
   #about
   {
-    height: 50%; 
+    height: 50%;
   }
 
   #contact
   {
     height: 65%;
-   
+
     #googleMap
     {
       height: 70%;
@@ -207,13 +222,11 @@
       }
     }
   }
-  
+
 }
 
-.sponsor-title
-{
-  font-size: 1.8em;
-}
-
-
+  .sponsor-title
+  {
+    font-size: 1.8em;
+  }
 }

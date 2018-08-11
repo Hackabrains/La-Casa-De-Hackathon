@@ -42,14 +42,16 @@
       //&:nth-child(1){ margin: 0;}
       margin-left: 1.4em;
 
-      .social-icon
-      {
-        width: 3.3em;
-        fill: $light-grey;
-        &:hover{
-          fill: $absolute-white;
-        }
-      }
     }
+  }
+}
+
+.social-icon
+{
+  width: 3.3em;
+  //fill: $light-grey;
+  &:hover{
+    opacity: .8;
+    //fill: $absolute-white;
   }
 }

@@ -1,0 +1,13 @@
+#home
+{
+  @extend %page;
+  background: url('../imgs/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#particles-js{
+  @extend %page;
+  position: absolute;
+  z-index: 0;
+}

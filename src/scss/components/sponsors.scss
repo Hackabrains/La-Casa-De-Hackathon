@@ -1,0 +1,63 @@
+#sponsor
+{
+  @extend %page;
+  display: flex;
+  justify-content: center;
+
+  .sponsor-container
+  {
+    width: calc(100% - 100px);
+    @extend %column;
+
+    .sponsor__single-content
+    {
+      @extend %fully-centralized-column;
+      height: 35%;
+      border-bottom: solid 1px #eee;
+      margin-top: 2%;
+
+      .college-icon
+      {
+        width: 18em;
+        //height: 7em;
+        margin-top: 1%;
+      }
+    }
+
+    .sponsor__multiple-content
+    {
+      @extend %center-row;
+      justify-content: space-between;
+      height: 55%;
+
+      .multiple-content-container
+      {
+        @extend %fully-centralized-column;
+
+        .sponsor-items
+        {
+          width: 30em;
+          height: 8em;
+          .sponsor__icon
+          {
+            width: 9em;
+            height: 3.6em;
+            margin: .4em;
+            &:hover{
+              opacity: .8;
+              transition: .11s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.sponsor-title
+{
+  text-transform: uppercase;
+  color: $cyan-blue;
+  font-size: 1.5em;
+  font-weight: 600;
+}

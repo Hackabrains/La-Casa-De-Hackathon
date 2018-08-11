@@ -1,0 +1,47 @@
+.head
+{
+  @extend %fully-centralized-row;
+  position: relative;
+  padding: 1.6em 0;
+
+  .header-logo
+  {
+    position: absolute;
+    left: 3%;
+    top: 15%;
+    width: 8.5em;
+  }
+
+  .nav-container
+  {
+    margin: auto;
+    @extend %row;
+
+    .nav__item
+    {
+      &:nth-child(1){ margin-left: 0; }
+      text-transform: uppercase;
+      margin-left: 2.3em;
+      color: $light-grey;
+      font-size: 1.3em;
+      font-weight: 600;
+
+      &:after
+      {
+        background: $light-grey;
+        content: '';
+        display: block;
+        height: 2px;
+        margin: 3px auto;
+        transition: width .3s ease, background-color .3s ease;
+        width: 0px;
+      }
+
+      &:hover:after
+      {
+        background: $light-grey;
+        width: $full-size;
+      }
+    }
+  }
+}

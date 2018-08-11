@@ -1,19 +1,43 @@
-$primaryColor: white;
-$secondaryColor: #B40505;
-@import './components/mixins.scss';
-@import './components/nav.scss';
-@import './components/main.scss';
-@import './components/btn.scss';
-@import './components/modal.scss';
+// utilitys
+@import './utils/variables.scss';
+@import './utils/placeholders.scss';
+@import './utils/mixins.scss';
 
-body {
-    margin: 0;
-    padding: 0;
-    background: url('../imgs/bg.png');
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    color: $primaryColor;
+//components
+@import './components/loading.scss';
+@import './components/header.scss';
+@import './components/main.scss';
+@import './components/scroll.scss';
+@import './components/home.scss';
+@import './components/about.scss';
+@import './components/contact.scss';
+@import './components/sponsors.scss';
+@import './components/footer.scss';
+@import './components/responsive.scss';
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body
+{
+    @extend %page;
     font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+a
+{
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }

@@ -1,0 +1,16 @@
+footer
+{
+  @extend %column;
+  color: #555;
+  font-size: .8em;
+  margin-bottom: 5px;
+  a
+  {
+    color: $cyan-blue;
+    font-weight: 600;
+    &:hover{
+      opacity: .7;
+      transition: all .15s ease-in-out;
+    }
+  }
+}

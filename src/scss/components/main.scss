@@ -1,36 +1,28 @@
-.main {
-    text-transform: uppercase;
-    margin: 0 4%;
-    display: flex;
-    margin-top: -40px;
-    flex-flow: column wrap;
-    justify-content: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 90% 0%;
-    height: calc(100vh - 100px);
-    &__title {
-        font-size: 3em;
-        margin: 0;
-            text-align: center;
-        img {
-            max-height: 45vh;
-        }
-        &--bgRed {
-            padding: 4px 3px 1px 2px;
-            display: inline-block;
-            position: relative;
-            top: -7px;
-            font-size: .8em;
-            border-radius: 2px;
-            background: $secondaryColor;
-        }
+.main-home
+{
+  @extend %fully-centralized-column;
+  width: $full-size;
+  height: 95%;
 
-    }
-    &__description {
-        margin: 0;
-        opacity: .4;
-        letter-spacing: .5px;
-        font-size: 1.2em;
-    }
+  .hackathon-logo
+  {
+    width: 30em;
+  }
+
+  .btn-subscribe
+  {
+    margin-top: 3%;
+    cursor: pointer;
+    padding: 2em 2.6em;
+    color: $light-grey;
+    background: $dark-pink;
+    border: solid 1px $dark-pink;
+    border-radius: 2px;
+    font-size: 1.4em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 1;
+  }
+
 }

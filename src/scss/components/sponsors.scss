@@ -41,7 +41,8 @@
         {
           width: 30em;
           height: 8em;
-
+          
+          
           .sponsor__icon
           {
             width: 9em;
@@ -49,7 +50,7 @@
             margin: .4em;
             &:hover{
               transition: .12s ease-in;
-               opacity: .85;
+              opacity: .85;
             }
           }
         }
